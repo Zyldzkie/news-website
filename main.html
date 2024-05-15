@@ -32,6 +32,17 @@
                 width: calc(100% - 16px);
             }
         }
+        .card-img {
+            transition: all 1s ease;
+            -webkit-filter: blur(0px); /* Chrome, Safari, Opera */
+            filter: blur(0px);
+        }
+
+        .card:hover .card-img {
+            transition: all 1s ease;
+            -webkit-filter: blur(5px); /* Chrome, Safari, Opera */
+            filter: blur(5px);
+        }
     </style>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
@@ -120,21 +131,19 @@
   
 
     <div class="container-fluid mt-4">
-        <div class="grid" data-masonry='{"percentPosition": true }'>
-            <div class="grid-item">
-                
-                <a href="#" data-bs-toggle="tooltip" data-bs-title="Click to learn more">
-                    <div class="card text-bg-dark border-0">
-                        <img src="https://placehold.co/800x600" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                        </div>
+      <div class="grid" data-masonry='{"percentPosition": true }'>
+        <div class="grid-item">
+            <a href="#" data-bs-toggle="tooltip" data-bs-title="Click to learn more">
+                <div class="card text-bg-dark border-0">
+                    <img src="assets/newslogo.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small>Last updated 3 mins ago</small></p>
                     </div>
-                </a>
-
-            </div>
+                </div>
+            </a>
+        </div>
             <div class="grid-item">
 
 
@@ -145,7 +154,7 @@
                     <div class="card-body">
                     <h5 class="card-title">Want to see more of our Local news?</h5>
                     <p class="card-text">Visit our Local news page!</p>
-                    <a href="#" class="btn btn-primary">See more</a>
+                    <a href="local.html" class="btn btn-primary">See more</a>
                     </div>
                 </div>
 
@@ -203,7 +212,7 @@
                     <div class="card-body">
                     <h5 class="card-title">Want to see more of our Weather news?</h5>
                     <p class="card-text">Visit our Weather news page!</p>
-                    <a href="#" class="btn btn-primary">See more</a>
+                    <a href="weather.html" class="btn btn-primary">See more</a>
                     </div>
                 </div>
 
@@ -250,7 +259,7 @@
                     <div class="card-body">
                     <h5 class="card-title">Want to see more of our Showbiz news?</h5>
                     <p class="card-text">Visit our Showbiz news page!</p>
-                    <a href="#" class="btn btn-primary">See more</a>
+                    <a href="showbiz.html" class="btn btn-primary">See more</a>
                     </div>
                 </div>
 
